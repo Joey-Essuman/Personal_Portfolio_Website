@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="./collapse.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="./collapse.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <title>Minimalist Joe</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="nav-one">
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><span
+                style="
+                  font-weight: bold;
+                  letter-spacing: 0.5rem;
+                  border: solid 2px white;
+                  padding: 0.5rem 0.5rem;
+                "
+                >MINIMALIST JOE</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="What are you looking for?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="./index.html" class="active"
+          ><span style="font-weight: bolder">Minimalist Joe</span></a
+        >
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <section class="about-first-section">
+      <div class="personal-info">
+        <div class="first-section-text">
+          <h1>ABOUT ME</h1>
+          <p>
+            I am a FUN self-taught
+            <span
+              >Software Engineer | Graphic Designer | Animator | Illustrator
+              |</span
+            >
+            from the Central region o f Ghana. While I love and partake in many
+            aspects of web development and design, my main passions are:
+            Front-end Web Development, Concept Design, Illustration,
+            Advertisement and Web Design. I find it hard to choose a favorite
+            because I am constantly learning and evolving. I combine these and
+            other soft skills in my projects. I strive for INNOVATIVENESS,
+            CREATIVITY and MINMALISM. I believe in simplicity and clarity.
+          </p>
+        </div>
+        <div class="first-section-image">
+          <img src="./Resources/Background Hero.png" alt="Minimalist Joey" />
+        </div>
+      </div>
+    </section>
+    <section class="about-second-section">
+      <h1>SKILLS</h1>
+      <p>Hover on icons to see the skill level</p>
+      <div class="skills">
+        <h2>DESIGN</h2>
+        <div class="design">
+          <img
+            src="./Resources/icons8-adobe-after-effects-30.png"
+            onmouseover="afterEffectsHover()"
+            onmouseout="afterEffectsOut()"
+          />
+          <div id="afterEffectsProgress" class="progress">
+            <div class="bar" style="width: 35%">
+              <p class="percent" style="padding-left: 0"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-adobe-illustrator-30.png"
+            onmouseover="illustratorHover()"
+            onmouseout="illustratorOut()"
+          />
+          <div id="illustratorProgress" class="progress">
+            <div class="bar" style="width: 80%">
+              <p class="percent" style="padding-left: 6.5rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-adobe-indesign-30.png"
+            onmouseover="indesignHover()"
+            onmouseout="indesignOut()"
+          />
+          <div id="indesignProgress" class="progress">
+            <div class="bar" style="width: 70%">
+              <p class="percent" style="padding-left: 5rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-adobe-photoshop-30 (1).png"
+            onmouseover="photoshopHover()"
+            onmouseout="photoshopOut()"
+          />
+          <div id="photoshopProgress" class="progress">
+            <div class="bar" style="width: 85%">
+              <p class="percent" style="padding-left: 7rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-adobe-premiere-pro-30.png"
+            onmouseover="premiereProHover()"
+            onmouseout="premiereProOut()"
+          />
+          <div id="premiereProProgress" class="progress">
+            <div class="bar" style="width: 30%">
+              <p class="percent" style="margin-left: 3.5rem"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <h2>WEB DEVELOPMENT</h2>
+        <div class="webDevelopment">
+          <img
+            src="./Resources/icons8-css-30.png"
+            onmouseover="cssHover()"
+            onmouseout="cssOut()"
+          />
+          <div id="cssProgress" class="progress">
+            <div class="bar" style="width: 80%">
+              <p class="percent" style="padding-left: 12.5rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-html-5-30.png"
+            onmouseover="htmlHover()"
+            onmouseout="htmlOut()"
+          />
+          <div id="htmlProgress" class="progress">
+            <div class="bar" style="width: 85%">
+              <p class="percent" style="padding-left: 13rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-javascript-logo-30.png"
+            onmouseover="javascriptHover()"
+            onmouseout="javascriptOut()"
+          />
+          <div id="javascriptProgress" class="progress">
+            <div class="bar" style="width: 60%">
+              <p class="percent" style="padding-left: 9.5rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-react-30.png"
+            onmouseover="reactHover()"
+            onmouseout="reactOut()"
+          />
+          <div id="reactProgress" class="progress">
+            <div class="bar" style="width: 50%">
+              <p class="percent" style="padding-left: 8rem"></p>
+            </div>
+          </div>
+          <img
+            src="./Resources/icons8-responsive-30.png"
+            onmouseover="responsiveHover()"
+            onmouseout="responsiveOut()"
+          />
+          <div id="responsiveProgress" class="progress">
+            <div class="bar" style="width: 85%">
+              <p class="percent" style="padding-left: 13rem"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+      <h1>SOCIALS</h1>
+      <div class="social-media">
+        <h2>LinkedIn</h2>
+        <div class="icons">
+          <img
+            src="./Resources/icons8-linkedin-30.png"
+            alt="LinkedIn Account"
+          />
+          <a href="linkedin.com/in/justice-cudjoe-essuman-84098b110">
+            VIEW PROFILE
+          </a>
+        </div>
+      </div>
+      <div class="social-media">
+        <h2>Twitter</h2>
+        <div class="icons">
+          <img src="./Resources/icons8-twitter-30.png" alt="Twitter Account" />
+          <a href="https://mobile.twitter.com/jo3y_jnr"> VIEW PROFILE </a>
+        </div>
+      </div>
+      <div class="social-media">
+        <h2>Behance</h2>
+        <div class="icons">
+          <img src="./Resources/icons8-behance-30.png" alt="Behance Account" />
+          <a href="https://www.behance.net/justiceessuman/"> VIEW PROFILE </a>
+        </div>
+      </div>
+      <div class="social-media">
+        <h2>Dribbble</h2>
+        <div class="icons">
+          <img
+            src="./Resources/icons8-dribbble-30 (1).png"
+            alt="Dribbble Account"
+          />
+          <a href="https://www.dribbble.com/Jo3y_the_creator"> VIEW PROFILE </a>
+        </div>
+      </div>
+      <div class="social-media">
+        <h2>Github</h2>
+        <div class="icons">
+          <img src="./Resources/icons8-github-30.png" alt="LinkedIn Account" />
+          <a href="https://github.com/Joey-Essuman"> VIEW PROFILE </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2021</p>
+      <p>All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

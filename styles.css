@@ -1,0 +1,832 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: url("./Resources/website-design-background-1.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  font-size: larger;
+  margin: 1rem 2rem;
+  text-decoration: none;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #333;
+}
+
+.searchTerm:focus {
+  color: #333;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(238, 238, 238);
+  background: rgb(0, 0, 0);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin: 1rem 1rem;
+}
+
+.topnav {
+  display: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(119, 119, 119, 0.863);
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgba(20, 20, 20, 0.973);
+  color: white;
+}
+
+/* Styling First Section */
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 12rem;
+}
+
+.first-section h1,
+.first-section h2,
+.first-section h3,
+.first-section p,
+.first-section button {
+  text-align: center;
+}
+
+.first-section h1 {
+  color: white;
+  font-size: medium;
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+
+.first-section h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 0.5rem 0;
+}
+
+.first-section h3 {
+  color: white;
+  font-size: medium;
+  font-weight: lighter;
+  margin: 0.25rem 0;
+}
+
+.first-section button {
+  width: 15rem;
+  height: auto;
+  color: white;
+  font-size: medium;
+  padding: 0.5rem 0.5rem;
+  background: transparent;
+  border: 2px solid white;
+  margin: 3rem 0.5rem;
+  cursor: pointer;
+}
+
+.first-section-buttons a {
+  text-decoration: none;
+}
+
+.first-section button:hover,
+.first-section button:active {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+/* About Page Styling */
+.about-first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first-section-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 50%;
+}
+
+.first-section-text h1 {
+  color: white;
+  margin: 1rem 0;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.first-section-text p {
+  color: white;
+  margin: 1rem 0;
+  font-size: medium;
+  line-height: 2rem;
+}
+
+.first-section-image {
+  width: 30%;
+  height: auto;
+}
+
+.first-section-image img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.about-second-section,
+.third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 2rem;
+}
+
+.third-section {
+  margin-bottom: 3rem;
+}
+
+.about-second-section h1,
+.third-section h1 {
+  color: white;
+  margin: 2rem 4rem;
+}
+
+.about-second-section p {
+  color: white;
+  margin: 0 4rem;
+  font-weight: bold;
+}
+
+.skills,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.25rem 4rem;
+}
+
+.design,
+.webDevelopment {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.design img,
+.webDevelopment img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.design img:hover,
+.design img:active,
+.webDevelopment img:hover,
+.webDevelopment img:active {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.skills h2 {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  font-weight: lighter;
+}
+
+.design #afterEffectsProgress,
+.design #illustratorProgress,
+.design #indesignProgress,
+.design #photoshopProgress,
+.design #premiereProProgress {
+  display: none;
+}
+.webDevelopment #cssProgress,
+.webDevelopment #htmlProgress,
+.webDevelopment #javascriptProgress,
+.webDevelopment #reactProgress,
+.webDevelopment #responsiveProgress {
+  display: none;
+}
+
+.progress {
+  margin: 20px auto;
+  padding: 0;
+  width: 90%;
+  height: 30px;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 6px;
+  border: 2px solid white;
+  z-index: 3;
+  position: absolute;
+  bottom: 100%;
+  margin-left: 0;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  background: white;
+  z-index: 3;
+}
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: tahoma, arial, helvetica;
+  font-size: 12px;
+  color: white;
+}
+
+.social-media h2 {
+  font-size: large;
+  color: white;
+  font-weight: lighter;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.icons img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: large;
+  cursor: pointer;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.icons a:hover,
+.icons a:active {
+  background-color: rgba(255, 255, 255, 0.603);
+  color: black;
+}
+
+/* Portfolio Styling */
+
+.portfolio-first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio-first-section h1 {
+  font-size: larger;
+  color: white;
+  letter-spacing: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  font-weight: lighter;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 1rem 1rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, 0.836);
+  transition: 1s;
+}
+
+.portfolio:hover,
+.portfolio:active {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.portfolio h2 {
+  color: white;
+  font-size: larger;
+  font-weight: lighter;
+  margin: 0.25rem 0;
+  letter-spacing: 0.25rem;
+}
+
+.portfolio img {
+  width: 95%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.portfolio-container a {
+  text-decoration: none;
+}
+
+/* Contact Styling */
+.contact-first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.contact-first-section h1 {
+  font-size: larger;
+  color: white;
+  letter-spacing: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  font-weight: lighter;
+}
+
+.contact-first-section h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 0.5rem 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.phone,
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone {
+  border-right: solid 2px white;
+}
+
+.phone img,
+.email img {
+  margin: 0 1rem;
+}
+
+.phone p,
+.email p {
+  font-size: large;
+  color: white;
+  letter-spacing: 0.25rem;
+  margin: 0 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: bottom 0.2s ease-in-out;
+}
+
+footer p {
+  padding: 1rem 1rem;
+}
+
+.topnav {
+  display: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(128, 128, 128);
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgba(20, 20, 20, 0.973);
+  color: white;
+}
+
+@media only screen and (max-width: 1040px) {
+  .nav-one {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .topnav span {
+    font-weight: lighter;
+    letter-spacing: 0.25rem;
+    border: solid 2px white;
+    padding: 0.25rem 0.25rem;
+    font-size: small;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(20, 20, 20, 0.973);
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: larger;
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  input ::placeholder {
+    display: none;
+  }
+
+  .first-section {
+    margin-top: 10rem;
+  }
+
+  .first-section h3 {
+    font-size: smaller;
+  }
+
+  .first-section button {
+    width: 10rem;
+    height: auto;
+    color: white;
+    font-size: small;
+    padding: 0.25rem 0.25rem;
+    background: transparent;
+    border: 2px solid white;
+    margin: 3rem 0.5rem;
+    cursor: pointer;
+  }
+
+  .first-section button:active {
+    background-color: white;
+    color: black;
+    transition: 1s;
+  }
+
+  .about-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .first-section-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .first-section-text p {
+    color: white;
+    margin: 1rem 0;
+    font-size: medium;
+    line-height: 2rem;
+  }
+
+  .first-section-image {
+    width: 100%;
+    height: auto;
+  }
+  .about-second-section,
+  .third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 1rem;
+  }
+
+  .about-second-section h1,
+  .third-section h1 {
+    color: white;
+    margin: 2rem 1rem;
+  }
+
+  .about-second-section p {
+    color: white;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+
+  .skills,
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.25rem 1rem;
+  }
+
+  .skills h2 {
+    margin: 3rem 0;
+  }
+
+  .portfolio-first-section {
+    border: none !important;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-first-section {
+    width: 100%;
+    margin-top: 6rem;
+    border: 2px solid white;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-first-section h1 {
+    font-size: medium;
+    color: white;
+    letter-spacing: 0.25rem;
+    margin: 0.5rem 0.5rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 1rem;
+  }
+
+  .portfolio h2 {
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    margin: 0.25rem 0;
+    letter-spacing: 0.25rem;
+  }
+
+  .third-section {
+    margin-bottom: 3rem;
+  }
+
+  .contact-first-section {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-first-section h1 {
+    font-size: larger;
+    color: white;
+    letter-spacing: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    font-weight: lighter;
+  }
+
+  .contact-first-section h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0.5rem 0;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .phone,
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .phone img,
+  .email img {
+    width: 30%;
+    height: auto;
+    margin: 0 0.5rem;
+  }
+
+  .phone {
+    border-right: none !important;
+  }
+
+  .phone p,
+  .email p {
+    font-size: large;
+    color: white;
+    letter-spacing: 0.25rem;
+    margin: 0 0.25rem;
+  }
+}
